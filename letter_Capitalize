@@ -1,0 +1,17 @@
+def toUpperCase(word):
+	if len(word) == 1:
+		result = word.upper()
+	else:
+		result = word[0].upper() + word[1:]
+	return result
+
+
+
+def LetterCapitalize(str):
+	str = str[0].upper() + str[1:]
+	one_list = str.split(' ')
+	result = []
+	for element in one_list:
+		result.append(toUpperCase(element))
+	result = " ".join(result)
+	print result
