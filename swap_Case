@@ -1,0 +1,10 @@
+def SwapCase(str):
+	result = []
+	for char in str:
+		if char == char.upper():
+			result.append(char.lower())
+		elif char != char.upper():
+			result.append(char.upper())
+		else:
+			result.append(char)
+	print ''.join(result)
