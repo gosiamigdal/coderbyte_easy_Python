@@ -1,0 +1,8 @@
+def WordCount(str):
+	words = 0
+	space = " "
+	for char in str:
+		if char in space:
+			words += 1
+	words += 1
+	print words
