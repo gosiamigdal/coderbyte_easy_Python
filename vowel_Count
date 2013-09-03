@@ -1,0 +1,9 @@
+def VowelCount(str):
+	str = str.lower()
+	vowel_amount = 0
+	for letter in str:
+		if letter in "aeiou":
+			vowel_amount += 1
+		else:
+			vowel_amount = vowel_amount
+	print vowel_amount
