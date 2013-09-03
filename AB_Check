@@ -1,0 +1,8 @@
+def Abcheck(str):
+	str = str.lower()
+	for index, char in enumerate(str):
+		if char == "a" and index + 4 < len(str) and str[index + 4] == "b":
+			return "true"
+		elif char == "b" and index + 4 < len(str) and str[index + 4] == "a":
+			return "true"
+	return "false"
