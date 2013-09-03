@@ -1,0 +1,13 @@
+def ExOh(str):
+	str = str.lower()
+	Xes = 0
+	Oes = 0
+	for char in str:
+		if char == "o":
+			Oes += 1
+		else:
+			Xes += 1
+	if Xes == Oes:
+		return "true"
+	else:
+		return "false"
