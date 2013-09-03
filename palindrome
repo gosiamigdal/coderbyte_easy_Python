@@ -1,0 +1,18 @@
+def justLetters(str):
+	str = str.lower()
+	result = []
+	for letter in str:
+		if letter in "abcdefghijklmnopqrstuvwxyz":
+			result.append(letter)
+	return ''.join(result)
+
+
+
+
+def Palindrome(str):
+	str = justLetters(str)
+	reversed = str[::-1]
+	if reversed == str:
+		print "true"
+	else:
+		print "false"
