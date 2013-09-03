@@ -1,0 +1,34 @@
+def isLetter(str):
+	for letter in str:
+		if letter in "abcdefghijklmnopqrstuvwxyz":
+			return True
+		else:
+			return False
+
+
+def isVowel(letter):
+	if letter in "aeiouy":
+		return True
+	else:
+		return False
+
+
+def LetterChanges(str):
+	str = str.lower()
+	result = []
+	for char in str:
+		if char == "z":
+			result.append("a")
+		elif isLetter(char) == True:
+			charCode = ord(char)
+			charCodereturn = charCode + 1
+			result.append(chr(charCodereturn))
+		else:
+			result.append(char)
+	final = []
+	for char in result:
+		if isVowel(char) == True:
+			final.append(char.upper())
+		else:
+			final.append(char)
+	print ''.join(final)
