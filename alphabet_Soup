@@ -1,0 +1,6 @@
+def AlphabetSoup(str):
+	str = str.lower()
+	result = []
+	for char in str:
+		result.append(char)
+	return ''.join(sorted(result))
