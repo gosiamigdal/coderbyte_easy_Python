@@ -1,0 +1,21 @@
+def isLetter(letter):
+	if letter in "abcdefghijklmnopqrstuvwxyz":
+		return True
+	else:
+		return False 
+
+
+
+
+def SimpleSymbols(str):
+	str = str.lower()
+	for index, char in enumerate(str):
+		if isLetter(char):
+			indexLess = index - 1
+			indexMore = index + 1
+			if indexLess < 0 or indexMore >= len(str):
+				return False
+			if str[indexLess] != "+" or str[indexMore] != "+":
+				return False
+
+	return True
