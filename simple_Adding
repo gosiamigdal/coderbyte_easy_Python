@@ -1,0 +1,7 @@
+def SimpleAdding(num): 
+	suma = 0;
+	i = 0
+	while i <= num:
+		suma += i
+		i += 1
+	print suma
